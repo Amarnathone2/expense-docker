@@ -14,7 +14,7 @@ services:
   volumes:
     - source: mysql
       target: /var/lib/mysql
-      type: volume # -v volume-name:/path/in/container
+      type: volume # -v volume-name:/path/in/container   # this is volume mount
   backend:
     image: backend:v1.0.0
     container_name: backend
